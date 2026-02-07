@@ -72,7 +72,6 @@ if st.button("🔍 Check Presence & Similarity", type="primary", use_container_w
         "similarity_score": similarity,
         "distance": round(distance, 4),
         "threshold_used": result["threshold"],
-        "faces_in_gallery": "multiple → best match taken",
         "method": "DeepFace (ArcFace + mtcnn)"
     }
 
