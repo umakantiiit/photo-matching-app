@@ -11,7 +11,7 @@ def load_models():
         DeepFace.build_model("ArcFace")
         _ = DeepFace.extract_faces(
             img_path="https://picsum.photos/id/64/200/200",
-            detector_backend="mtcnn",
+            detector_backend="yunet",
             enforce_detection=False
         )
     return "✅ Models ready"
