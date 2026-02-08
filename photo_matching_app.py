@@ -62,6 +62,7 @@ if st.button("🔍 Check Presence & Similarity", type="primary", use_container_w
         )
 
     distance = result["distance"]
+    threshold = 0.35
     similarity = round(1 - distance, 4)
     is_match = distance < result["threshold"]
 
